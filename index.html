@@ -25,6 +25,7 @@
           <input type="text"
           name="fname" 
           id="fname"
+          onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
           required>
         </div>
       
@@ -41,6 +42,7 @@
             <input type="text" 
               name="lname"
               id="lname"
+              onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
               required 
             >
         </div>
@@ -80,12 +82,12 @@
 
               <div class="querybtnflex">
                 <div class="querybtn">
-                  <input type="radio" name="query" id="radio">
+                  <input type="radio" name="query" id="radio1">
                   <p>General Enquiry</p>
                 </div>
               
                 <div class="querybtn">
-                  <input type="radio" name="query" id="radio">
+                  <input type="radio" name="query" id="radio2">
                 <p>Support Request</p>
                 </div>
              </div>
