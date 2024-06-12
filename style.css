@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+   font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    background-color:  hsl(148, 38%, 91%);
+    position: relative;
+}
+
+form {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem 1rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 330px;
+    border-radius: 15px;
+    margin-top: 2rem;
+    color: hsl(187, 24%, 22%);
+}
+
+label {
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+}
+
+.astk {
+    width: 9px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.lname,
+.querySlect, 
+.msg,
+.email{
+    margin-top: 30px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    color: hsl(187, 24%, 22%);
+    margin-top: 1em;
+    padding: 1em 0;
+    border: 1.5px solid hsl(187, 24%, 22%);
+    border-radius: 6px;
+    outline: none;
+    padding-left: 1.2em;
+}
+
+.querybtn {
+    border: 1.5px solid hsl(187, 24%, 22%);
+    border-radius: 6px;
+    display: flex;
+    margin-bottom: 20px;
+    max-height: 50px;
+    margin-top: 1rem;
+}
+
+.querybtn input {
+    width: 18px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.querybtn p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.check-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#checkbox {
+    margin-left: -7rem;
+    margin-top: 0rem;
+}
+
+.check-contact p {
+    margin-left: -87px;
+}
+
+.btn {
+    background-color: hsl(169, 82%, 27%);
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 1.2rem 1rem;
+    color: hsl(0, 0%, 100%);
+    font-family: inherit;
+    font-size: 1.2em;
+    margin-top: 1.5rem;
+}
+
+.error_msg {
+ display: none;
+}
+
+.sent-msg {
+    background-color: hsl(187, 24%, 22%);
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    max-width: 35rem;
+    margin: 0 auto;
+    left: 10px;
+    right: 10px;
+    display: none;
+}
+
+.modal-pop-container {
+    padding: 1.2rem 1rem;
+}
+
+.pop-up {
+    display: flex;
+    gap: 10px;
+    margin-bottom: -25px;
+}
+
+.pop-up h2 {
+    font-size: 19px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }

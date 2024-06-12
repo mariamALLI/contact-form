@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <form id="form_container">
+     <h1>Contact Us</h1>
+
+     <div class="contact">
+        <div class="fname">
+          <div class="flex-astrik">
+            <label for="fname">First Name</label>
+            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+          </div>
+  
+          <input type="text"
+          name="fname" 
+          id="fname"
+          required>
+        </div>
+      
+        <div id="error1" class="error_msg">
+         This field is required
+        </div> 
+
+        <div class="lname">
+            <div class="flex-astrik">
+              <label for="lname">Last Name</label>
+              <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+            </div>
+
+            <input type="text" 
+              name="lname"
+              id="lname"
+              required 
+            >
+        </div>
+
+          <div id="error2" class="error_msg">
+            This field is required
+          </div> 
+     </div>
+      
+      
+     <div class="contact"></div> 
+        <div class="email">
+          <div class="flex-astrik">
+            <label for="email">Email Address</label>
+            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+          </div>
+          
+          <input type="text" 
+          name="email"
+          id="email"
+          required
+          >
+        </div>
+
+        <div id="error3" class="error_msg">
+          Please enter a valid email address
+         </div> 
+      </div>
+
+
+      <div class="contact">
+        <div class="querySlect">
+          <div class="flex-astrik">
+            <label for="query">Query Type</label>
+            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+          </div>
+
+              <div class="querybtnflex">
+                <div class="querybtn">
+                  <input type="radio" name="query" id="radio">
+                  <p>General Enquiry</p>
+                </div>
+              
+                <div class="querybtn">
+                  <input type="radio" name="query" id="radio">
+                <p>Support Request</p>
+                </div>
+             </div>
+
+            <div id="error4" class="error_msg">
+              Please select a query type
+            </div> 
+         
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="msg">
+          <div class="flex-astrik">
+            <label for="message">Message</label>
+            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+          </div>
+
+          <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        </div>
+
+        <div id="error5" class="error_msg">
+          This field is required
+        </div> 
+      </div>
+
+
+      <div class="check-contact">
+        <input type="checkbox" name="check" id="checkbox">
+        <p>I consent to being contacted by the team <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon"></p>
+
+        <div id="error6" class="error_msg">
+         To submit this form, please consent to being contacted
+        </div> 
+      </div>
+
+
+      <button class="btn" id="submit-btn" type="submit">Submit</button>
+  </form>
+
+  <section class="sent-msg">
+    <div class="modal-pop-container">
+      <div class="pop-up">
+        <img src="assets/images/icon-success-check.svg" alt="icon-success-check">
+        <h2>Message Sent!</h2>
+      </div>
+      <p> Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </section>
+
+  
+
+  <!-- 
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="indexx.js"></script>
+</body>
+</html>
