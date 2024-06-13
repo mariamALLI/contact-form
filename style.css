@@ -82,8 +82,8 @@ form textarea:focus {
     margin-top: 0.8rem;
 }
 
-#radio,
-#checkbox {
+#checkbox,
+.radio {
     accent-color: hsl(169,82%,27%);
 }
 
@@ -116,6 +116,8 @@ form textarea:focus {
 
 .error_msg {
  display: none;
+ color: hsl(0, 66%, 54%);
+ margin-top: 14px;
 }
 
 .sent-msg {
