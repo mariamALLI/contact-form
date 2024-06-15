@@ -15,7 +15,7 @@
   <form id="form_container">
      <h1>Contact Us</h1>
 
-     <div class="contact">
+     <div class="contact fandlname-box">
         <div class="fname">
           <div class="flex-astrik">
             <label for="fname">First Name</label>
@@ -27,11 +27,14 @@
           id="fname"
           onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
           required>
+
+          <div id="error1" class="error_msg">
+            <p>This field is required</p>
+           </div> 
+
         </div>
       
-        <div id="error1" class="error_msg">
-         This field is required
-        </div> 
+        
 
         <div class="lname">
             <div class="flex-astrik">
@@ -45,12 +48,13 @@
               onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
               required 
             >
-        </div>
 
-          <div id="error2" class="error_msg">
-            This field is required
-          </div> 
+            <div id="error2" class="error_msg">
+              <p>This field is required</p>
+            </div>
+        </div>    
      </div>
+          
       
       
      <div class="contact"></div> 

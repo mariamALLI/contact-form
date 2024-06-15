@@ -59,6 +59,11 @@ form textarea:focus {
     padding-left: 1.2rem;
   }
 
+  .fandlname-box {
+    display: flex;
+    flex-direction: column;
+  }
+
 .querybtn {
     border: 1.5px solid hsl(187, 24%, 22%);
     border-radius: 6px;
@@ -154,4 +159,46 @@ form textarea:focus {
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+ }
+
+ @media (min-width: 800px){
+    form {
+       min-width: 1200px;
+       padding: 2.5rem 1.5rem;
+    }
+
+    .fandlname-box {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .querybtnflex {
+
+    }
+
+    #fname {
+
+    }
+
+    #lname {
+        margin-bottom: 30px;
+    }
+
+    .lname,
+    .fname {
+        min-width: 49%;
+    }
+
+    .lname {
+        margin-top: 33px;
+    }
+
+    .fname {
+
+    }
+
+    #error2 p {
+
+    }
  }
