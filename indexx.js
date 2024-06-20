@@ -23,6 +23,25 @@ const error6 = document.getElementById('error6')
 const sntMsg = document.getElementById('snt-msg')
 const queryBtn = document.querySelector('.query-btn')
 
+const queryBtn1 = document.querySelector('#querybtn1')
+const queryBtn2 = document.querySelector('#querybtn2')
+
+
+queryBtn1.addEventListener('click', ()=>{
+    console.log('clicked')
+        queryBtn1.style.borderColor = "hsl(169, 82%, 27%)"
+        queryBtn1.style.backgroundColor = "hsl(148, 38%, 91%)"
+    
+
+})
+
+queryBtn2.addEventListener('click', ()=>{
+    console.log('clicked')
+    queryBtn2.style.borderColor = "hsl(169, 82%, 27%)"
+    queryBtn2.style.backgroundColor = "hsl(148, 38%, 91%)"
+})
+
+
 
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -54,13 +73,12 @@ submitBtn.addEventListener('click', (event) => {
         emailInput.style.borderColor =" hsl(169, 82%, 27%)"
     }
   
-    if (!radioBtn.value) {
+    if (!radioBtn.checked) {
       error4.style.display = "block"
-    //   queryBtn.style.border = "1px solid hsl(0, 66%, 54%)"
       return;
     }else{
         error4.style.display = "none";
-        // queryBtn.style.borderColor =" hsl(169, 82%, 27%)"
+        // queryBtn.style.backgroundColor = "hsl(148, 38%, 91%)"
     }
 
   

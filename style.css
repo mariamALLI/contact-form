@@ -59,6 +59,12 @@ form textarea:focus {
     padding-left: 1.2rem;
   }
 
+  form input:hover,
+  form textarea:hover {
+    border: 1px solid hsl(169, 79%, 32%);
+    cursor: pointer;
+  }
+
   .fandlname-box {
     display: flex;
     flex-direction: column;
@@ -119,6 +125,11 @@ form textarea:focus {
     margin-top: 1.5rem;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(168, 88%, 16%);
+}
+
 .error_msg {
  display: none;
  color: hsl(0, 66%, 54%);
@@ -163,7 +174,7 @@ form textarea:focus {
 
  @media (min-width: 800px){
     form {
-       min-width: 1200px;
+       min-width: 950px;
        padding: 2.5rem 1.5rem;
     }
 
@@ -174,7 +185,12 @@ form textarea:focus {
     }
 
     .querybtnflex {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .querybtn {
+        min-width: 49%;
     }
 
     #fname {
@@ -200,5 +216,18 @@ form textarea:focus {
 
     #error2 p {
 
+    }
+
+    .check-contact {
+        display: inline-flex;
+        min-width: 45%;
+    }
+
+    #checkbox {
+        margin-left: -190px;
+    }
+
+    .check-contact p {
+        margin-left: -190px;
     }
  }
