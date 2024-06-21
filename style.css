@@ -166,10 +166,11 @@ form textarea:focus {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    margin-top: 15px;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%);
+    color: hsl(169, 79%, 32%);
  }
 
  @media (min-width: 800px){

@@ -12,125 +12,127 @@
 </head>
 
 <body>
-  <form id="form_container">
-     <h1>Contact Us</h1>
+ <main> 
+    <form id="form_container">
+      <h1>Contact Us</h1>
 
-     <div class="contact fandlname-box">
-        <div class="fname">
-          <div class="flex-astrik">
-            <label for="fname">First Name</label>
-            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
-          </div>
-  
-          <input type="text"
-          name="fname" 
-          id="fname"
-          onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
-          required>
-
-          <div id="error1" class="error_msg">
-            <p>This field is required</p>
-           </div> 
-
-        </div>
-      
-        
-
-        <div class="lname">
+      <div class="contact fandlname-box">
+          <div class="fname">
             <div class="flex-astrik">
-              <label for="lname">Last Name</label>
+              <label for="fname">First Name</label>
+              <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+            </div>
+    
+            <input type="text"
+            name="fname" 
+            id="fname"
+            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
+            required>
+
+            <div id="error1" class="error_msg">
+              <p>This field is required</p>
+            </div> 
+
+          </div>
+        
+          
+
+          <div class="lname">
+              <div class="flex-astrik">
+                <label for="lname">Last Name</label>
+                <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+              </div>
+
+              <input type="text" 
+                name="lname"
+                id="lname"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
+                required 
+              >
+
+              <div id="error2" class="error_msg">
+                <p>This field is required</p>
+              </div>
+          </div>    
+      </div>
+            
+        
+        
+      <div class="contact"></div> 
+          <div class="email">
+            <div class="flex-astrik">
+              <label for="email">Email Address</label>
+              <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+            </div>
+            
+            <input type="text" 
+            name="email"
+            id="email"
+            required
+            >
+          </div>
+
+          <div id="error3" class="error_msg">
+            Please enter a valid email address
+          </div> 
+        </div>
+
+
+        <div class="contact">
+          <div class="querySlect">
+            <div class="flex-astrik">
+              <label for="query">Query Type</label>
               <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
             </div>
 
-            <input type="text" 
-              name="lname"
-              id="lname"
-              onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"
-              required 
-            >
+                <div class="querybtnflex" >
+                  <div class="querybtn" id="querybtn1">
+                    <input type="radio" name="query" id="radio1" class="radio">
+                    <p>General Enquiry</p>
+                  </div>
+                
+                  <div class="querybtn" id="querybtn2">
+                    <input type="radio" name="query" id="radio2" class="radio">
+                  <p>Support Request</p>
+                  </div>
+              </div>
 
-            <div id="error2" class="error_msg">
-              <p>This field is required</p>
+              <div id="error4" class="error_msg">
+                Please select a query type
+              </div> 
+          
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="msg">
+            <div class="flex-astrik">
+              <label for="message">Message</label>
+              <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
             </div>
-        </div>    
-     </div>
-          
-      
-      
-     <div class="contact"></div> 
-        <div class="email">
-          <div class="flex-astrik">
-            <label for="email">Email Address</label>
-            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
-          </div>
-          
-          <input type="text" 
-          name="email"
-          id="email"
-          required
-          >
-        </div>
 
-        <div id="error3" class="error_msg">
-          Please enter a valid email address
-         </div> 
-      </div>
-
-
-      <div class="contact">
-        <div class="querySlect">
-          <div class="flex-astrik">
-            <label for="query">Query Type</label>
-            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
+            <textarea name="message" id="msg" cols="30" rows="10"></textarea>
           </div>
 
-              <div class="querybtnflex" >
-                <div class="querybtn" id="querybtn1">
-                  <input type="radio" name="query" id="radio1" class="radio">
-                  <p>General Enquiry</p>
-                </div>
-              
-                <div class="querybtn" id="querybtn2">
-                  <input type="radio" name="query" id="radio2" class="radio">
-                <p>Support Request</p>
-                </div>
-             </div>
-
-            <div id="error4" class="error_msg">
-              Please select a query type
-            </div> 
-         
-        </div>
-      </div>
-
-      <div class="contact">
-        <div class="msg">
-          <div class="flex-astrik">
-            <label for="message">Message</label>
-            <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon">
-          </div>
-
-          <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+          <div id="error5" class="error_msg">
+            This field is required
+          </div> 
         </div>
 
-        <div id="error5" class="error_msg">
-          This field is required
-        </div> 
-      </div>
+
+        <div class="check-contact">
+          <input type="checkbox" name="check" id="checkbox">
+          <p>I consent to being contacted by the team <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon"></p>
+        </div>  
+          <div id="error6" class="error_msg">
+          To submit this form, please consent to being contacted
+          </div> 
+        
 
 
-      <div class="check-contact">
-        <input type="checkbox" name="check" id="checkbox">
-        <p>I consent to being contacted by the team <img class="astk" src="assets/images/icons8-asterisk-24 (1).png" alt="asterisk icon"></p>
-      </div>  
-        <div id="error6" class="error_msg">
-         To submit this form, please consent to being contacted
-        </div> 
-      
-
-
-      <button class="btn" id="submit-btn" type="submit">Submit</button>
-  </form>
+        <button class="btn" id="submit-btn" type="submit">Submit</button>
+    </form>
+  </main>
 
   <section id="snt-msg" class="sent-msg">
     <div class="modal-pop-container">
@@ -143,14 +145,13 @@
   </section>
 
   
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Mariam Alli</a>.
+    </div>
+  </footer>
 
-  <!-- 
- 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="indexx.js"></script>
 </body>
 </html>
